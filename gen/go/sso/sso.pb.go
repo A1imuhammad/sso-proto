@@ -328,10 +328,10 @@ const file_sso_sso_proto_rawDesc = "" +
 	"\x0eIsAdminRequest\x12\x17\n" +
 	"\auser_id\x18\x01 \x01(\x03R\x06userId\",\n" +
 	"\x0fIsAdminResponse\x12\x19\n" +
-	"\bis_admin\x18\x01 \x01(\bR\aisAdmin2\xae\x01\n" +
+	"\bis_admin\x18\x01 \x01(\bR\aisAdmin2\xab\x01\n" +
 	"\x04Auth\x129\n" +
-	"\bRegister\x12\x15.auth.RegisterRequest\x1a\x16.auth.RegisterResponse\x123\n" +
-	"\x05Login\x12\x12.auth.LoginRequest\x1a\x16.auth.RegisterResponse\x126\n" +
+	"\bRegister\x12\x15.auth.RegisterRequest\x1a\x16.auth.RegisterResponse\x120\n" +
+	"\x05Login\x12\x12.auth.LoginRequest\x1a\x13.auth.LoginResponse\x126\n" +
 	"\aIsAdmin\x12\x14.auth.IsAdminRequest\x1a\x15.auth.IsAdminResponseB3Z1github.com/A1imuhammad/sso-proto/gen/go/sso;ssov1b\x06proto3"
 
 var (
@@ -360,7 +360,7 @@ var file_sso_sso_proto_depIdxs = []int32{
 	2, // 1: auth.Auth.Login:input_type -> auth.LoginRequest
 	4, // 2: auth.Auth.IsAdmin:input_type -> auth.IsAdminRequest
 	1, // 3: auth.Auth.Register:output_type -> auth.RegisterResponse
-	1, // 4: auth.Auth.Login:output_type -> auth.RegisterResponse
+	3, // 4: auth.Auth.Login:output_type -> auth.LoginResponse
 	5, // 5: auth.Auth.IsAdmin:output_type -> auth.IsAdminResponse
 	3, // [3:6] is the sub-list for method output_type
 	0, // [0:3] is the sub-list for method input_type

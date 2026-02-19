@@ -4,9 +4,14 @@ package auth;
 
 option go_package = "github.com/A1imuhammad/sso-proto/gen/go/sso;ssov1";
 
+// The Auth service provides authentication and authorization functionality.
+// It allows users to register, log in, and check if they are an admin.
 service Auth {
+  // Registers a new user with the provided email and password
   rpc Register (RegisterRequest) returns (RegisterResponse);
-  rpc Login (LoginRequest) returns (RegisterResponse);
+  // Logs in a user with the provided email and password. 
+  rpc Login (LoginRequest) returns (LoginResponse);
+  //Checks if the user with the provided email is an admin.
   rpc IsAdmin (IsAdminRequest) returns (IsAdminResponse);
 }
 
